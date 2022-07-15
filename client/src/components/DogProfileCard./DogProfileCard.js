@@ -33,9 +33,11 @@ function DogProfileCard() {
         <section className='bio'>This is going to be a small section that will display something about the dog and their personality.</section>
         <div className='buttons-container'>
             <button className='choice-button like' onClick={handleLikeButton} >
-                <img className='button-icon' src={heartLogo} alt='heart' /></button>
+                <img className='button-icon' src={heartLogo} alt='heart' />
+            </button>
             <button className='choice-button dislike' onClick={handleDislikeButton} >
-                <img className='button-icon' src={brokenHeart} alt='broken heart' /></button> 
+                <img className='button-icon' src={brokenHeart} alt='broken heart' />
+            </button> 
         </div>
     </div>
   )
