@@ -1,11 +1,13 @@
 import './App.css';
 import DogProfileCard from './components/DogProfileCard./DogProfileCard';
+import Login from './components/Login/Login';
 import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
+      <Login/>
       {/* login */}{/* logout */}
 
       <section className='body'>
