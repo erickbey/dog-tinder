@@ -23,13 +23,15 @@ function DogProfileCard() {
 
   return (
     <div className='card-container'>
-        <h1 className='card-title'>Name</h1>
+        <h1 className='card-title'>Luna</h1>
         <div className='image-container'>
             <div className='image'></div>
             <button className='previous-image-button' onClick={handlePreviousImage} >←</button>
             <button className='next-image-button'onClick={handleNextImage} >→</button>
         </div>
-        <h2 className='about'>Age, Gender, Breed</h2>
+        <h2 className='about'>Age: 1.5</h2>
+        <h2 className='about'>Gender: Female</h2>
+        <h2 className='about'>Breed: Goldendoodle</h2>
         <section className='bio'>This is going to be a small section that will display something about the dog and their personality.</section>
         <div className='buttons-container'>
             <button className='choice-button like' onClick={handleLikeButton} >
