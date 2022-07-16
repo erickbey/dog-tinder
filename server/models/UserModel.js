@@ -25,6 +25,10 @@ const userSchema = new mongoose.Schema({
         trim: true,
         maxLength: [40, "dog breed can only be 40 characters"]
     },
+    about: {
+        type: String,
+        maxLength: [500, "Your bio is too long. Try making it a little shorter"]
+    },
     email: {
         type: String,
         required: [true, 'An email is required'],
