@@ -22,7 +22,7 @@ function DogProfileCard() {
 
 
   return (
-    <div className='card-container'>
+    <div className='container card-container'>
         <h1 className='card-title'>Luna</h1>
         <div className='image-container'>
             <div className='image'></div>

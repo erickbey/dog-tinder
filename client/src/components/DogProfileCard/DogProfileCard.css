@@ -1,14 +1,16 @@
 .card-container {
-    height: 750px;
+    height: 900px;
     width: 400px;
-    border: 2px solid black;
+    padding: 5px;
+    background: var(--color-bg);
+    border-radius: 0 0 3rem 3rem;
 }
 
-Button {
+/* Button {
     background-color: rgb(255, 0, 0);
     border: none;
     cursor: pointer;
-}
+} */
 
 .card-title {
     font-size: 22px;

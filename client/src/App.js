@@ -7,15 +7,10 @@ import NavBar from './components/NavBar/NavBar';
 function App() {
   return (
     <div className="App">
-      <NavBar />
-      {/* <AccountSetup /> */}
-      {/* login */}{/* logout */}
-
-      <section className='body'>
+      <div className='container app__container'>
+        <NavBar />
         <DogProfileCard />
-      </section>
-    
-      {/* match when mutal likes */}
+      </div>
     </div>
   );
 }

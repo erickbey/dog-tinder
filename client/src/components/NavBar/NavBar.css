@@ -1,22 +1,31 @@
-.navbar-container {
-    height: 50px;
-    width: 100%;
-    margin-bottom: 20px;
+.navbar__container {
+    height: 80px;
+    width: 500px;
+    padding: 10px;
     background-color: var(--color-bg);
     display: inline-block;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    border-radius: 3rem 3rem 0 0;
 }
 
-.logo-title {
-    font-size: 1.3rem;
-    margin-right: 150px;
+.options__btn {
+    margin-left: 20px;
 }
 
-.icons-container {
+.title {
+    font-size: 1.4rem;
+    color: white;
+    width: 150px;
+    text-align: center;
+}
+
+.icons__container {
     display: flex;
     align-items: center;
+    gap: 10px;
+    margin-right: 20px;
 }
 
 .notification-icon {
