@@ -7,7 +7,7 @@ import NavBar from './components/NavBar/NavBar';
 function App() {
   return (
     <div className="App">
-      <div className='container app__container'>
+      <div className='app__container'>
         <NavBar />
         <DogProfileCard />
       </div>

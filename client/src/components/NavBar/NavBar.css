@@ -1,9 +1,8 @@
 .navbar__container {
-    height: 80px;
+    height: 70px;
     width: 500px;
     padding: 10px;
     background-color: var(--color-bg);
-    display: inline-block;
     display: flex;
     align-items: center;
     justify-content: space-between;

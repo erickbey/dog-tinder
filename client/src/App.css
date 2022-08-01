@@ -6,3 +6,8 @@
   flex-direction: column;
   height: 100vh;
 }
+
+.app__container {
+  background: var(--color-bg);
+  border-radius: 3rem;
+}
