@@ -1,0 +1,35 @@
+.navbar-container {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: lightblue;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-title {
+    font-size: 1.3rem;
+    margin-right: 150px;
+}
+
+.icons-container {
+    /* width: 100px; */
+    display: flex;
+}
+
+.profile-icon-container {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: pink;
+    margin-right: 20px;
+}
+
+.settings-icon-container {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: pink;
+}

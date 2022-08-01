@@ -1,0 +1,28 @@
+.setup-container {
+    background-color: lightblue;
+    width: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.setup-labels {
+    margin: 0;
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.setup-input {
+    width: 300px;
+}
+
+.setup-button {
+    width: 75px;
+    height: 30px;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: pink;
+}
