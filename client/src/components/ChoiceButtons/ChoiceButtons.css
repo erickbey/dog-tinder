@@ -1,0 +1,30 @@
+.choice-btns__container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.choice__btn-secondary {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    background-color: var(--color-bg-variant);
+}
+
+.choice__btn-main {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+}
+
+.secondary__icon {
+    color: var(--color-primary);
+    font-size: 2rem;
+}
+
+.main__icon {
+    color: var(--color-bg);
+    font-size: 2rem;
+}

@@ -3,6 +3,7 @@ import './NavBar.css';
 import { IoIosNotificationsOutline } from 'react-icons/io';
 import { BiBone } from 'react-icons/bi';
 import { CgMenuGridO } from 'react-icons/cg';
+import profile from '../../assets/profilepic.JPG'
 
 function NavBar() {
   return (
@@ -13,9 +14,11 @@ function NavBar() {
         <h1 className='title'>Throw Me a Bone <BiBone className='icon__small'/></h1>
         <div className='icons__container'>
           <button className='btn'>
-            <IoIosNotificationsOutline className='icon__medium'/>
+            <IoIosNotificationsOutline className='icon__medium notification'/>
           </button>
-            <div className='settings-icon-container'></div>
+            <button className='btn profile-icon__container'>
+              <img src={profile} alt="" className='profile__pic' />
+            </button>
         </div>
     </div>
   )

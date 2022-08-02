@@ -19,7 +19,7 @@
 
   --transition: all 400ms ease;
 
-  --container-width-lg: 550px;
+  --container-width-lg: 450px;
   --container-width-md: 86%;
   --container-width-sm: 90%;
 }
@@ -33,8 +33,20 @@ h1, h2, h3, h4, h5 {
   font-weight: 600;
 }
 
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
 .container {
   width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+.body__container {
+  width: var(--container-width-lg);
+  height: 900px;
   margin: 0 auto;
 }
 
