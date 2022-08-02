@@ -19,7 +19,7 @@
 
   --transition: all 400ms ease;
 
-  --container-width-lg: 450px;
+  --container-width-lg: 90%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
 }
@@ -39,13 +39,13 @@ img {
   object-fit: cover;
 }
 
-.container {
+.content__container {
   width: var(--container-width-lg);
   margin: 0 auto;
 }
 
-.body__container {
-  width: var(--container-width-lg);
+.app__container {
+  width: 450px;
   height: 900px;
   margin: 0 auto;
 }
