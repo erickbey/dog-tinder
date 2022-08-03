@@ -13,6 +13,7 @@ function Login() {
           <p className='label password'>Password</p>
           <input className='inputs' type="text" />
           <button className='btn submit__button'><span className='login__text'>Login</span></button>
+          <p className='signup__text'>Not a member yet? Sign-Up <a>Here!</a></p>
       </div>
     </div>
   )
