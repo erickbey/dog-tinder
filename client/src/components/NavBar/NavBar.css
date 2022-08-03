@@ -19,6 +19,9 @@
     text-align: center;
     margin-left: 20px;
 }
+.bone {
+    margin-left: 5px;
+}
 
 .icons__container {
     display: flex;

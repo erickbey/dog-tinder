@@ -11,7 +11,7 @@ function NavBar() {
       <button className='btn options__btn'>
         <CgMenuGridO className='icon__medium options'/>
       </button>
-        <h1 className='title'>Throw Me a Bone <BiBone className='icon__small'/></h1>
+        <h1 className='title'>Throw Me a Bone <BiBone className='icon__small bone'/></h1>
         <div className='icons__container'>
           <button className='btn'>
             <IoIosNotificationsOutline className='icon__medium notification'/>

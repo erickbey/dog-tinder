@@ -11,7 +11,7 @@ function DogProfileCard() {
   return (
     <div className='app__container profile__card'>
       <NavBar />
-        <div className="content__container image__container">
+        <div className="content__container image-profile__container">
           <img src={Dog} alt="dog" className='profile__picture' />
           <button className="btn back__btn"><IoIosArrowBack className='icon__small back'/></button>
         </div>
