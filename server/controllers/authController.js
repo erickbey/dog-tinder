@@ -1,3 +1,5 @@
+const User = require('../models/UserModel');
+
 exports.signup = async (req, res, next) => {
     const newUser = await User.create({
         name: req.body.name,
@@ -8,8 +10,12 @@ exports.signup = async (req, res, next) => {
         email: req.body.email,
         password: req.body.password,
         passwordConfirm: req.body.passwordConfirm,
-        passwordChangedAt: req.body.passwordChangedAt
     });
-    const url = `${req.protocol}://${req.get('host')}/me`;
-    // console.log(url)
+    
+    res.status(200).json({
+        status: 'success',
+        data: {
+            newUser
+        }
+    });
 };

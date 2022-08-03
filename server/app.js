@@ -5,6 +5,8 @@ const mongoSanitize = require('express-mongo-sanitize');
 const rateLimit = require('express-rate-limit');
 const xss = require('xss-clean');
 const cors = require('cors');
+const cookieParser = require('cookie-parser');
+const compression = require('compression');
 
 const userRouter = require('./routes/userRoutes');
 
@@ -13,15 +15,17 @@ dotenv.config({ path: "../config.env" });
 const app = express();
 
 // Limit requests from same API
-const limiter = rateLimit({
-  max: 100,
-  windowMS: 60 *60 * 1000, 
-  message: 'Too many requests from this IP, please try again in an hour'
-});
+// const limiter = rateLimit({
+//   max: 100,
+//   windowMS: 60 *60 * 1000, 
+//   message: 'Too many requests from this IP, please try again in an hour'
+// });
 
-app.use('/api', limiter);
+// app.use('/api', limiter);
 
 app.use(cors());
+
+app.enable('trust proxy');
 
 app.options('*', cors());
 
@@ -36,6 +40,8 @@ app.use(mongoSanitize());
 // Data sanitization against XSS
 app.use(xss());
 
+// Reduce payload size
+app.use(compression());
 
 // Connection to Database
 const MONGO_URI = process.env.DB_URI;
@@ -55,7 +61,8 @@ const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log(`App running on port ${port}`);
+  return "api running"
 });
 
 //Routes 
-app.use('api/v1/users', userRouter)
+app.use('/api/v1/users', userRouter)
