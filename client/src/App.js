@@ -1,4 +1,5 @@
 import './App.css';
+// import AccountSetup from './components/AccountSetup/AccountSetup';
 // import DogPreviewCard from './components/DogPreviewCard/DogPreviewCard';
 // import AccountSetup from './components/AccountSetup/AccountSetup';
 // import DogProfileCard from './components/DogProfileCard/DogProfileCard';
@@ -10,6 +11,7 @@ function App() {
         {/* <DogProfileCard /> */}
         {/* <DogPreviewCard /> */}
         <Login />
+        {/* <AccountSetup /> */}
     </div>
   );
 }

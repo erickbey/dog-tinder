@@ -77,3 +77,15 @@ img {
   border: transparent;
   cursor: pointer;
 }
+
+.submit__button {
+  width: 150px;
+  height: 50px;
+  border-radius: 3rem;
+  margin-top: 20px;
+  padding: 5px;
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+  font-size: 1.3rem;
+  font-weight: 600;
+}

@@ -1,6 +1,5 @@
-.setup-container {
-    background-color: lightblue;
-    width: 500px;
+.setup {
+    width: 95%;
     border-radius: 20px;
     padding: 20px;
     display: flex;
@@ -8,21 +7,30 @@
     flex-direction: column;
 }
 
-.setup-labels {
+.setup__title {
+    width: 300px;
+    text-align: center;
+    color: white;
+    margin: 10px auto;
+    font-size: 1.8rem;
+}
+
+.setup__labels {
     margin: 0;
     margin-bottom: 5px;
-    margin-top: 15px;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-primary);
 }
 
-.setup-input {
-    width: 300px;
-}
-
-.setup-button {
-    width: 75px;
+.setup__input {
     height: 30px;
-    border-radius: 20px;
-    margin-top: 20px;
-    padding: 5px;
-    background-color: pink;
+    width: 250px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+textarea {
+    border-radius: 5px;
 }
