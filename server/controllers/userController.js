@@ -2,6 +2,7 @@ const User = require('../models/UserModel');
 const AppError = require('./../utils/appError');
 const catchAsync = require('../utils/catchAsync');
 
+// Allows users to change certain aspects of their account (Note: NOT including their password)
 exports.updateMe = catchAsync(async (req, res, next) => {
     if (req.body.password || req.body.passwordConfirm) {
       next(
@@ -28,7 +29,8 @@ exports.updateMe = catchAsync(async (req, res, next) => {
     });
   });
 
-  exports.deleteMe = catchAsync(async (req, res, next) => {
+// Allows users to delete their account (Note: Does not delete account from DB, sets the active field to false instead)
+exports.deleteMe = catchAsync(async (req, res, next) => {
     await User.findByIdAndUpdate(req.user.id, { active: false });
   
     res.status(204).json({
