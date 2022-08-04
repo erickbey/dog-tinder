@@ -1,6 +1,7 @@
 const User = require('../models/UserModel');
 const AppError = require('./../utils/appError');
 const catchAsync = require('../utils/catchAsync');
+const jwt = require('jsonwebtoken');
 
 // Creates a token for JsonWebToken
 const signToken = id => {
@@ -59,5 +60,14 @@ exports.login = catchAsync(async (req, res, next) => {
         return next(new AppError('Incorrect email or password', 401))
     }
 
-    createAndSendToken(newUser, 201, req, res);
+    createAndSendToken(user, 201, req, res);
 });
+
+// Logs out the cuurent user
+exports.logout = (req, res) => {
+    res.cookie('jwt', 'logged out', {
+        expires: new Date(Date.now() + 10 * 1000),
+        httpOnly: true
+    })
+    res.status(200).json({ status: 'success' })
+}
