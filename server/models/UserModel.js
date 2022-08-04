@@ -70,6 +70,11 @@ const userSchema = new mongoose.Schema({
             },
             message: 'Passwords do not match'
         }
+    },
+    active: {
+        type: Boolean,
+        default: true,
+        select: false
     }
 });
 
