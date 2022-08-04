@@ -1,7 +1,8 @@
 const User = require('../models/UserModel');
 const AppError = require('./../utils/appError');
+const catchAsync = require('../utils/catchAsync');
 
-exports.updateMe = async (req, res, next) => {
+exports.updateMe = catchAsync(async (req, res, next) => {
     if (req.body.password || req.body.passwordConfirm) {
       next(
         new AppError(
@@ -25,13 +26,13 @@ exports.updateMe = async (req, res, next) => {
         user: updatedUser,
       },
     });
-  };
+  });
 
-  exports.deleteMe = async (req, res, next) => {
+  exports.deleteMe = catchAsync(async (req, res, next) => {
     await User.findByIdAndUpdate(req.user.id, { active: false });
   
     res.status(204).json({
       status: "success",
       data: null,
     });
-  };
+  });

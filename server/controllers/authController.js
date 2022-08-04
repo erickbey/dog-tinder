@@ -1,7 +1,8 @@
 const User = require('../models/UserModel');
 const AppError = require('./../utils/appError');
+const catchAsync = require('../utils/catchAsync');
 
-exports.signup = async (req, res, next) => {
+exports.signup = catchAsync(async (req, res, next) => {
     const newUser = await User.create({
         name: req.body.name,
         age: req.body.age,
@@ -19,9 +20,9 @@ exports.signup = async (req, res, next) => {
             newUser
         }
     });
-};
+});
 
-exports.login = async (req, res, next) => {
+exports.login = catchAsync(async (req, res, next) => {
     const { email, password } = req.body;
 
     if(!email || !password) {
@@ -40,4 +41,4 @@ exports.login = async (req, res, next) => {
             user
         }
     });
-};
+});
