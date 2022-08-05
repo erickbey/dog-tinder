@@ -31,6 +31,27 @@ exports.getUser = catchAsync(async (req, res, next) => {
   });
 });
 
+// Gets all the users 
+exports.getAllUsers = catchAsync(async (req, res, next) => {
+  let filter;
+  if(req.params.tourId) filter = { user: req.params.userId };
+
+  const features = new APIFeatures(User.find(filter), req.query)
+    .filter()
+    .sort()
+    .fieldLimiting()
+    .pagination();
+  const doc = await features.query;
+
+  res.status(200).json({
+    status: "success",
+    results: doc.length,
+    data: {
+      data: doc
+    },
+  });
+});
+
 // Allows users to change certain aspects of their account (Note: NOT including their password)
 exports.updateMe = catchAsync(async (req, res, next) => {
     if (req.body.password || req.body.passwordConfirm) {

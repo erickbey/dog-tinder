@@ -78,13 +78,14 @@ const userSchema = new mongoose.Schema({
     }
 });
 
+// Saves the password as a hashed string in out DB
 userSchema.pre('save', async function(next) {
     // Only runs if the password is modified
     if(!this.isModified('password')) return next();
 
     this.password = await bcrypt.hash(this.password, 12);
 
-    // Deletes the passwordConifmr field
+    // Deletes the passwordConfirm field
     this.passwordConfirm = undefined;
     next();
 });
@@ -101,6 +102,8 @@ userSchema.pre(/^find/, function(next) {
     next();
 });
 
+
+// Compares the incoming password with the saved password
 userSchema.methods.correctPassword = async function(candidatePassword, userPassword) {
     return await bcrypt.compare(candidatePassword, userPassword);
 };
