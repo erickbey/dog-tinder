@@ -4,6 +4,7 @@ import { IoIosNotificationsOutline } from 'react-icons/io';
 import { BiBone } from 'react-icons/bi';
 import { CgMenuGridO } from 'react-icons/cg';
 import profile from '../../assets/profilepic.JPG'
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
@@ -11,7 +12,7 @@ function NavBar() {
       <button className='btn options__btn'>
         <CgMenuGridO className='icon__medium options'/>
       </button>
-        <h1 className='title'>Throw Me a Bone <BiBone className='icon__small bone'/></h1>
+        <Link to='/'><h1 className='title'>Throw Me a Bone <BiBone className='icon__small bone'/></h1></Link>
         <div className='icons__container'>
           <button className='btn'>
             <IoIosNotificationsOutline className='icon__medium notification'/>
