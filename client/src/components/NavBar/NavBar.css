@@ -19,6 +19,7 @@
     text-align: center;
     margin-left: 20px;
 }
+
 .bone {
     margin-left: 5px;
 }
@@ -43,4 +44,10 @@
 
 .profile__pic {
     border-radius: 50%;
+}
+
+.login {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-primary);
 }
