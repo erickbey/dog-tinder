@@ -1,0 +1,13 @@
+.left__arrow {
+    position: absolute;
+    bottom: 50%;
+    left: 5px;
+    font-size: 1.5rem;
+}
+
+.right__arrow {
+    position: absolute;
+    bottom: 50%;
+    right: 5px;
+    font-size: 1.5rem;
+}

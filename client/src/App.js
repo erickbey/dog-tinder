@@ -1,10 +1,12 @@
 import './App.css';
-import DogPreviewCard from './components/DogPreviewCard/DogPreviewCard';
+import DogProfileCard from './components/DogProfileCard/DogProfileCard';
+// import DogPreviewCard from './components/DogPreviewCard/DogPreviewCard';
 
 function App() {
   return (
     <div className="App">
-        <DogPreviewCard />
+        {/* <DogPreviewCard /> */}
+        <DogProfileCard />
     </div>
   );
 }
