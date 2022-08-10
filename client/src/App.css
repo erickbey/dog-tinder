@@ -1,5 +1,6 @@
 .App {
   background: var(--color-primary-variant);
+  background-image: url("https://img.freepik.com/free-vector/dog-cat-paw-print-with-heart-pattern-design_1017-36752.jpg?w=2000");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,5 +10,25 @@
 
 .app__container {
   background: var(--color-bg);
-  /* border-radius: 3rem; */
+}
+
+
+/* Media Queries For Medium Devices */
+@media screen and (max-width: 1024px) {
+  .app__container {
+    width: 100vw;
+  }
+}
+
+/* Media Queries For Small Devices */
+@media screen and (max-width: 600px) {
+  .app__container {
+    overflow: scroll;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .container.contact__container {
+      width: var(--container-width-sm);
+  }
 }

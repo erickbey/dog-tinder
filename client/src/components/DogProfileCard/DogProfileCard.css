@@ -2,6 +2,11 @@
     border-radius: 3rem;
     position: relative;
     margin-top: 15px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg);
 }
 
 .profile__card {
@@ -11,14 +16,11 @@
 .profile__picture {
     height: 100%;
     border-radius: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .back__btn {
     position: absolute;
-    top: 30px;
+    top: 70px;
     left: 20px;
     height: 40px;
     width: 40px;
@@ -96,6 +98,20 @@ span {
 
 .buttons__container {
     position: absolute;
-    bottom: 5%;
+    bottom: 3%;
     width: 100%;
 }
+
+  
+  /* Media Queries For Small Devices */
+  @media screen and (max-width: 600px) {
+    .image-profile__container {
+        height: 300px;
+    }
+
+    .buttons__container {
+        position: absolute;
+        bottom: 2%;
+        width: 100%;
+    }
+  }

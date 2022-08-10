@@ -34,3 +34,18 @@
 textarea {
     border-radius: 5px;
 }
+
+
+/* Media Queries For Medium Devices */
+@media screen and (max-width: 1024px) {
+    .app__container {
+      width: 100vw;
+    }
+  }
+  
+  /* Media Queries For Small Devices */
+  @media screen and (max-width: 600px) {
+    .setup__title {
+        margin: 10px auto;
+    }
+  }
