@@ -18,9 +18,10 @@ function DogProfileCard() {
     <div className='app__container profile__card'>
       <NavBar />
         <div className="content__container image-profile__container">
-          {/* <img src={Dog} alt="dog" className='profile__picture' /> */}
-          <ImageCarousel slides={slides} Sliderdata={sliderData} />
-          <button className="btn back__btn"><IoIosArrowBack className='icon__small back'/></button>
+          <div className="profile__picture">
+            <ImageCarousel slides={slides} Sliderdata={sliderData} />
+            <button className="btn back__btn"><IoIosArrowBack className='icon__small back'/></button>
+          </div>
         </div>
         <div className="content__container main__info">
           <div>
