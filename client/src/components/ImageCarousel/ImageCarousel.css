@@ -3,6 +3,11 @@
     bottom: 50%;
     left: 5px;
     font-size: 1.5rem;
+    color: var(--color-bg);
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    font-size: 1.8rem;
+    cursor: pointer;
 }
 
 .right__arrow {
@@ -10,4 +15,9 @@
     bottom: 50%;
     right: 5px;
     font-size: 1.5rem;
+    color: var(--color-bg);
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    font-size: 1.8rem;
+    cursor: pointer;
 }

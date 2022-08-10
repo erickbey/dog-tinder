@@ -1,6 +1,7 @@
 const User = require('../models/UserModel');
 const AppError = require('./../utils/appError');
 const catchAsync = require('../utils/catchAsync');
+const APIFeatures = require('../utils/ApiFeatures');
 
 // Checks the body for allowed fields to return values that do not change in update
 const filterObj = (obj, ...allowedFields) => {
