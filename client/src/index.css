@@ -15,6 +15,7 @@
   --color-bg-variant: #181F41;
   --color-primary: #EB5674;
   --color-primary-variant: #FEDCE5;
+  --color-primary-transparent: #eb56747c;
   --color-light: rgba(255, 255, 255, 0.6);
 
   --transition: all 400ms ease;
@@ -22,6 +23,9 @@
   --container-width-lg: 90%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
+
+  --app-container-lg-width: 700px;
+  --app-container-lg-height: 100
 }
 
 ::-webkit-scrollbar {
@@ -49,8 +53,8 @@ img {
 }
 
 .app__container {
-  width: 450px;
-  height: 900px;
+  width: 800px;
+  height: 100vh;
   margin: 0 auto;
 }
 

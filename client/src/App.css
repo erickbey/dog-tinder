@@ -9,5 +9,5 @@
 
 .app__container {
   background: var(--color-bg);
-  border-radius: 3rem;
+  /* border-radius: 3rem; */
 }

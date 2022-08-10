@@ -11,14 +11,14 @@
     width: 300px;
     text-align: center;
     color: white;
-    margin: 10px auto;
+    margin: 50px auto;
     font-size: 1.8rem;
 }
 
 .setup__labels {
     margin: 0;
     margin-bottom: 5px;
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 1.1rem;
     font-weight: 600;
     color: var(--color-primary);
@@ -26,7 +26,7 @@
 
 .setup__input {
     height: 30px;
-    width: 250px;
+    width: 300px;
     font-size: 15px;
     border-radius: 5px;
 }
